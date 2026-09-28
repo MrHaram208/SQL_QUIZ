@@ -1,5 +1,5 @@
 -- JOINS
--- task 12
+
 select 
     pp.product_name,
     pb.brand_name,
@@ -8,7 +8,7 @@ from [production].[products] as pp
 inner join [production].[brands] as pb on pp.brand_id = pb.brand_id
 inner join [production].[categories] as pc on pp.category_id = pc.category_id
 
---task 13 
+
 select 
 so.order_id,
 sc.first_name + ' ' + sc.last_name as full_name,
